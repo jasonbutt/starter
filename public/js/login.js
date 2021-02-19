@@ -3,7 +3,7 @@ import axios from 'axios';
 import { showAlert } from './alerts';
 
 export const login = async (email, password) => {
-  console.log(email, password);
+  //console.log(email, password);
 
   try {
     const res = await axios({
@@ -14,7 +14,7 @@ export const login = async (email, password) => {
         password,
       },
     });
-    console.log(res.data.status);
+    //console.log(res.data.status);
 
     if (res.data.status === 'success') {
       showAlert('success', 'Logged in successfully!');
