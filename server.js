@@ -23,7 +23,7 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true,
   })
-  .then((con) => {
+  .then(() => {
     console.log('DB Connection made');
   });
 
